@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+{% load static %}
+{% load l10n %}
+{% load i18n %}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ITCC</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+    <style>
+        .mcf-1 {
+            background-image: url("{% static 'assets/img/mcf.png' %}") !important;
+        }
+        .mcf-2 {
+            background-image: url("{% static 'assets/img/bmpsi.png' %}")!important;
+        }
+        .mcf-3 {
+            background-image: url("{% static 'assets/img/bmpsi2021.png' %}")!important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 navbar-brand">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="{% static 'assets/Logo.png' %}" alt="" width="200" height="90">
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#pln">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#sertifikasi">Sertifikasi</a></li>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li class="dropdown"><a href="#"><span>Drop Down</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li><a href="#">Drop Down 1</a></li>
+                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>
+                                <li><a href="#">Deep Drop Down 1</a></li>
+                                <li><a href="#">Deep Drop Down 2</a></li>
+                                <li><a href="#">Deep Drop Down 3</a></li>
+                                <li><a href="#">Deep Drop Down 4</a></li>
+                                <li><a href="#">Deep Drop Down 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drop Down 2</a></li>
+                        <li><a href="#">Drop Down 3</a></li>
+                        <li><a href="#">Drop Down 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav><!-- .navbar -->
+
+        <a class="btn-book-a-table" href="#book-a-table">Search</a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="pln" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+        <div class="row justify-content-between gy-5">
+            <div
+                    class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                <h2 data-aos="fade-up">Institut Teknologi<br>PLN</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang bernaung
+                    di
+                    bawah Yayasan Pendidikan dan Kesejahteraan PLN dan Berlokasi di Cengkareng..</p>
+                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://infopmb.itpln.ac.id/" class="btn-book-a-table">JOIN US</a>
+                    <a href="https://youtu.be/B-H9wRigQI4"
+                       class="glightbox btn-watch-video d-flex align-items-center"><i
+                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 order-1 order-lg-2 text-center text-lg-start ">
+                <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero Section -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Learn More <span>About ITCC</span></p>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-7 position-relative about-img" style="background-image: url({% static 'assets/img/slide2.jpg' %}) ;"
+                     data-aos="fade-up" data-aos-delay="150">
+                </div>
+                <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            Information Technology Certification Center (ITCC) merupakan unit yang dimiliki oleh
+                            Institut Teknologi
+                            PLN Jakarta yang telah mendapatkan hak otorisasi dari Certiport Inc sebagai Certiport
+                            Authorized Testing
+                            Center (CATC) untuk menyelenggarakan pelatihan dan sertifikasi Internasional.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> Menjadi wahana pelatihan.</li>
+                            <li><i class="bi bi-check2-all"></i> sertifikasi di bidang teknologi informasi yang modern.
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> mandiri, unggul, dan berbudaya.</li>
+                        </ul>
+                        <p>
+                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah laboratorium
+                            yang
+                            menangani beberapa program sertifikasi berskala internasional,
+                            diperlukan adanya keselarasaan pemanfaatan sistem informasi dan teknologi informasi yang
+                            sesuai dengan
+                            kebutuhan disaat ini dan yang akan datang, sehingga diperlukan kerangka acuan untuk
+                            membangun sebuah
+                            arsitektur enterprise.
+                        </p>
+
+                        <div class="position-relative mt-4">
+                            <img src="{% static 'assets/Logo.png' %}" class="img-fluid" alt="">
+                            <a href="https://youtu.be/jEu3j5C-KeY" class="glightbox play-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-box">
+                        <h3>ITCC</h3>
+                        <p>
+                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah laboratorium
+                            yang
+                            menangani beberapa program sertifikasi berskala internasional
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Why Box -->
+
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="row gy-4">
+
+                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                <i class="bi bi-clipboard-data"></i>
+                                <h4>Corporis voluptates officia eiusmod</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                    aliquip</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                <i class="bi bi-gem"></i>
+                                <h4>Ullamco laboris ladore pan</h4>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                <i class="bi bi-inboxes"></i>
+                                <h4>Labore consequatur incidid dolore</h4>
+                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+        <div class="container" data-aos="zoom-out">
+
+            <div class="row gy-4 text-center">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="5365" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                        <p>Microsoft Office Specialist</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1156" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                        <p>Microsoft Technology Associate</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="399" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                        <p>Microsoft Certified Fundametals</p>
+                    </div>
+                </div>
+
+            </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <p>Check Our <span>Team</span></p>
+            </div>
+
+            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                <li class="nav-item">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                        <h4>Proctor</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                        <h4>TRAINER 1</h4>
+                    </a><!-- End tab nav item -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+                        <h4>TRAINER 2</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+                        <h4>OUR TEAM</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+            </ul>
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="tab-pane fade active show" id="menu-starters">
+
+                    <div class="tab-header text-center">
+                        <p>Teams</p>
+                        <h3>Proctor</h3>
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="{% static 'assets/img/menu/menu-item-1.png' %}" class="glightbox"><img
+                                    src="{% static 'assets/img/team/Pak-Jat.png' %}"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>HENDRA JATNIKA</h4>
+                            <p class="price">
+                                KEPALA ITCC
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets{% static '/img/menu/menu-item-2.png' %}" class="glightbox"><img
+                                    src="{% static 'assets/img/team/pak_bedi.png' %}"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>HERMAN BEDI A</h4>
+                            <p class="ingredients">
+
+                            </p>
+                            <p class="price">
+
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="assets/img/team/pak_yoga.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Yoga Distra</h4>
+                            <p class="ingredients">
+
+                            </p>
+                            <p class="price">
+
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-4.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-5.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-6.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Laboriosam Direva</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $9.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                    </div>
+                </div><!-- End Starter Menu Content -->
+
+                <div class="tab-pane fade" id="menu-breakfast">
+
+                    <div class="tab-header text-center">
+                        <p>Menu</p>
+                        <h3>Breakfast</h3>
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-1.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Magnam Tiste</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $5.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-2.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Aut Luia</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $14.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-3.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Est Eligendi</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $8.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-4.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-5.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-6.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Laboriosam Direva</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $9.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                    </div>
+                </div><!-- End Breakfast Menu Content -->
+
+                <div class="tab-pane fade" id="menu-lunch">
+
+                    <div class="tab-header text-center">
+                        <p>Menu</p>
+                        <h3>Lunch</h3>
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-1.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Magnam Tiste</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $5.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-2.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Aut Luia</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $14.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-3.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Est Eligendi</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $8.95'
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-4.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-5.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-6.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Laboriosam Direva</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $9.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                    </div>
+                </div><!-- End Lunch Menu Content -->
+
+                <div class="tab-pane fade" id="menu-dinner">
+
+                    <div class="tab-header text-center">
+                        <p>Menu</p>
+                        <h3>Dinner</h3>
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-1.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Magnam Tiste</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $5.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-2.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Aut Luia</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $14.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-3.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Est Eligendi</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $8.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-4.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-5.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Eos Luibusdam</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $12.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
+                                    src="assets/img/menu/menu-item-6.png"
+                                    class="menu-img img-fluid" alt=""></a>
+                            <h4>Laboriosam Direva</h4>
+                            <p class="ingredients">
+                                Lorem, deren, trataro, filede, nerada
+                            </p>
+                            <p class="price">
+                                $9.95
+                            </p>
+                        </div><!-- Menu Item -->
+
+                    </div>
+                </div><!-- End Dinner Menu Content -->
+
+            </div>
+
+        </div>
+    </section><!-- End Menu Section -->
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="sertifikasi" class="events">
+        <div class="container-fluid" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>sertifikasi</h2>
+                <p>sedang <span>Berlangsung</span> Di ITCC</p>
+            </div>
+
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-1">
+                        <h3>MCF</h3>
+                        <div class="price align-self-start">MCF Ang.2020, MTCNA Ang.2021, dan MOS BMPSI Ang.2021</div>
+                        <p class="description">
+                            Halo Mahasiswa ITPLN!!
+                            Berdasarkan acuan mutu capaian pembelajaran dan kelengkapan SKPI, mahasiswa lulusan ITPLN
+                            diwajibkan
+                            memenuhi persyaratan administratif sebelum pelaksanaan sidang/yudisium kelulusan..
+                        </p>
+                    </div><!-- End Event item -->
+
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-2">
+                        <h3>BMPSI</h3>
+                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020
+                        </div>
+                        <p class="description">
+                            Bagi peserta sertifikasi Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020, Jadwal
+                            Training
+                            sudah bisa dilihat di Web ITCC (bisa juga klik link di bio)..
+                        </p>
+                    </div><!-- End Event item -->
+
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-3">
+                        <h3>BMPSI</h3>
+                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020
+                        </div>
+                        <p class="description">
+                            Bagi peserta sertifikasi Microsoft Office Specialist (MOS) BMPSI Angkatan 2021, Jadwal
+                            Training sudah
+                            bisa dilihat di Web ITCC (bisa juga klik link di bio)..
+                        </p>
+                    </div><!-- End Event item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Chefs</h2>
+                <p>Our <span>Proffesional</span> Chefs</p>
+            </div>
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="chef-member">
+                        <div class="member-img">
+                            <img src="{% static 'assets/img/chefs/chefs-1.jpg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Master Chef</span>
+                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                                exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                    </div>
+                </div><!-- End Chefs Member -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="chef-member">
+                        <div class="member-img">
+                            <img src="{% static 'assets/img/chefs/chefs-2.jpg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Bintang pratomo</h4>
+                            <span>Patissier</span>
+                            <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                                corporis.
+                                Voluptate sed quas reiciendis animi neque sapiente.</p>
+                        </div>
+                    </div>
+                </div><!-- End Chefs Member -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="chef-member">
+                        <div class="member-img">
+                            <img src="{% static 'assets/img/chefs/chefs-3.jpg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>Cook</span>
+                            <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates
+                                enim aut
+                                architecto porro aspernatur molestiae modi.</p>
+                        </div>
+                    </div>
+                </div><!-- End Chefs Member -->
+
+            </div>
+
+        </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2 class="text-center">Validasi</h2>
+                <p class="text-center">Check <span>Your Profile</span> Now</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 d-flex align-items-center justify-content-center reservation-form-bg">
+                    <form action="{% url 'certifi:upload-page' %}" method="post" enctype="multipart/form-data" class="php-email-form "
+                          data-aos="fade-up"
+                          data-aos-delay="100">
+                        {% csrf_token %}
+                        {% load crispy_forms_tags %}
+                        {{ form.media }}
+                        {{ form | crispy }}
+                        <div class="row mb-3 mt-2">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Permintaan Anda sudah di Proses</div>
+                        </div>
+                        <div class="text-center justify-content-center mx-3 ">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div><!-- End Reservation Form -->
+            </div>
+
+        </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>gallery</h2>
+                <p>Check <span>Our Gallery</span></p>
+            </div>
+
+            <div class="gallery-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-1.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-2.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-3.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-3.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-4.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-4.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-5.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-5.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-6.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-6.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-7.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-7.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                                                 href="{% static 'assets/img/gallery/gallery-8.jpg' %}"><img
+                            src="{% static 'assets/img/gallery/gallery-8.jpg' %}" class="img-fluid"
+                            alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p><span>Contact Us</span></p>
+            </div>
+
+            <div class="mb-3">
+                <iframe style="border:0; width: 100%; height: 350px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253870.0729977381!2d106.42157509453128!3d-6.168251100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f788f60e492d%3A0x8b5ed89a85136510!2sInstitut%20Teknologi%20PLN!5e0!3m2!1sid!2sid!4v1685790709344!5m2!1sid!2sid"
+                        frameborder="0" allowfullscreen></iframe>
+            </div><!-- End Google Maps -->
+
+            <div class="row gy-4">
+
+                <div class="col-md-6">
+                    <div class="info-item  d-flex align-items-center">
+                        <i class="icon bi bi-map flex-shrink-0"></i>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
+                        </div>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class="icon bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>itcc@itpln.ac.id</p>
+                        </div>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="col-md-6">
+                    <div class="info-item  d-flex align-items-center">
+                        <i class="icon bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="col-md-6">
+                    <div class="info-item  d-flex align-items-center">
+                        <i class="icon bi bi-share flex-shrink-0"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <div><strong>Mon-Sat:</strong> 8AM - 4PM;
+                                <strong>Sunday:</strong> Closed
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Info Item -->
+
+            </div>
+
+            <form action="" method="post" role="form" class="php-email-form p-3 p-md-4">
+                <div class="row">
+                    <div class="col-xl-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-xl-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                               required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form><!--End Contact Form -->
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 d-flex">
+                <i class="bi bi-geo-alt icon"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>
+                        Cengkareng, Kota Jakarta Barat Daerah Khusus Ibukota Jakarta <br>
+                        Daerah Khusus Ibukota Jakarta, ID<br>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex">
+                <i class="bi bi-telephone icon"></i>
+                <div>
+                    <h4>Reservations</h4>
+                    <p>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> itcc@itpln.ac.id<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex">
+                <i class="bi bi-clock icon"></i>
+                <div>
+                    <h4>Opening Hours</h4>
+                    <p>
+                        <strong>Mon-Sat: 8AM </strong> - 4PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Follow Us</h4>
+                <div class="social-links d-flex">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Yusni</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">Yusni Yahdian</a>
+        </div>
+    </div>
+
+</footer><!-- End Footer -->
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+    {% if messages %}
+    <script>
+        {% for msg in messages %}
+        alert("{{ msg }}");
+        {% endfor %}
+    </script>
+    {% endif %}
+</body>
+
+</html>

@@ -8,7 +8,7 @@ from django.contrib import messages
 
 
 class LandingPage(View):
-    template_name = get_template('landing_page')
+    template_name = get_template('index')
 
     def get(self, *args, **kwargs):
         form = UploadFileForms()
