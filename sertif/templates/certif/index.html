@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
 {% load static %}
 {% load l10n %}
 {% load i18n %}
-
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -35,16 +35,28 @@
     <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
     <style>
-        .mcf-1 {
-            background-image: url("{% static 'assets/img/mcf.png' %}") !important;
+        .img-1 {
+            background-image: url("{% static 'assets/img/slide2.jpg' %}");
         }
-        .mcf-2 {
-            background-image: url("{% static 'assets/img/bmpsi.png' %}")!important;
+
+        .img-2 {
+            background-image: url("{% static 'assets/img/mcf.png' %}");
         }
-        .mcf-3 {
-            background-image: url("{% static 'assets/img/bmpsi2021.png' %}")!important;
+
+        .img-3 {
+            background-image: url("{% static 'assets/img/bmpsi.png' %}");
+        }
+
+        .img-4 {
+            background-image: url("{% static 'assets/img/bmpsi2021.png' %}");
+        }
+
+        .scroll {
+            overflow-y: scroll;
+            max-height: 300px;
         }
     </style>
+
 </head>
 
 <body>
@@ -62,34 +74,13 @@
             <ul>
                 <li><a href="#pln">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
                 <li><a href="#sertifikasi">Sertifikasi</a></li>
-                <li><a href="#chefs">Chefs</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
-                    </ul>
-                </li>
+                <li><a href="#form">Registrasi</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav><!-- .navbar -->
 
-        <a class="btn-book-a-table" href="#book-a-table">Search</a>
+        <a class="btn-book-a-table" href="#search">Search</a>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -103,8 +94,8 @@
             <div
                     class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
                 <h2 data-aos="fade-up">Institut Teknologi<br>PLN</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang bernaung
-                    di
+                <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang
+                    bernaung di
                     bawah Yayasan Pendidikan dan Kesejahteraan PLN dan Berlokasi di Cengkareng..</p>
                 <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                     <a href="https://infopmb.itpln.ac.id/" class="btn-book-a-table">JOIN US</a>
@@ -114,7 +105,8 @@
                 </div>
             </div>
             <div class="col-lg-3 order-1 order-lg-2 text-center text-lg-start ">
-                <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+                <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out"
+                     data-aos-delay="300">
             </div>
         </div>
     </div>
@@ -132,8 +124,7 @@
             </div>
 
             <div class="row gy-4">
-                <div class="col-lg-7 position-relative about-img" style="background-image: url({% static 'assets/img/slide2.jpg' %}) ;"
-                     data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-7 position-relative about-img img-1" data-aos="fade-up" data-aos-delay="150">
                 </div>
                 <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
                     <div class="content ps-0 ps-lg-5">
@@ -146,13 +137,14 @@
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-all"></i> Menjadi wahana pelatihan.</li>
-                            <li><i class="bi bi-check2-all"></i> sertifikasi di bidang teknologi informasi yang modern.
+                            <li><i class="bi bi-check2-all"></i> sertifikasi di bidang teknologi informasi yang
+                                modern.
                             </li>
                             <li><i class="bi bi-check2-all"></i> mandiri, unggul, dan berbudaya.</li>
                         </ul>
                         <p>
-                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah laboratorium
-                            yang
+                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
+                            laboratorium yang
                             menangani beberapa program sertifikasi berskala internasional,
                             diperlukan adanya keselarasaan pemanfaatan sistem informasi dan teknologi informasi yang
                             sesuai dengan
@@ -182,12 +174,12 @@
                     <div class="why-box">
                         <h3>ITCC</h3>
                         <p>
-                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah laboratorium
-                            yang
+                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
+                            laboratorium yang
                             menangani beberapa program sertifikasi berskala internasional
                         </p>
                         <div class="text-center">
-                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                            <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
                         </div>
                     </div>
                 </div><!-- End Why Box -->
@@ -197,27 +189,28 @@
 
                         <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-clipboard-data"></i>
-                                <h4>Corporis voluptates officia eiusmod</h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                    aliquip</p>
+                                <i class="bi bi-microsoft"></i>
+                                <h4>Microsoft Office Specialist</h4>
+                                <p>Microsoft Office Specialist menunjukkan bahwa Anda memiliki keahlian yang
+                                    diperlukan untuk memanfaatkan Office sebaik mungkin</p>
                             </div>
                         </div><!-- End Icon Box -->
 
                         <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-gem"></i>
-                                <h4>Ullamco laboris ladore pan</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt</p>
+                                <i class="bi bi-microsoft"></i>
+                                <h4>Microsoft Technology Associate</h4>
+                                <p>Sertifikasi Microsoft Technology Associate sebuah program sertifikasi yang
+                                    ditujukan bagi seseorang yang bekerja atau tenaga profesional di bidang IT</p>
                             </div>
                         </div><!-- End Icon Box -->
 
                         <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-inboxes"></i>
-                                <h4>Labore consequatur incidid dolore</h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                <i class="bi bi-microsoft"></i>
+                                <h4>Microsoft Certified Fundamentals</h4>
+                                <p>Microsoft Certified Fundamentals adalah sertifikasi tingkat awal yang memvalidasi
+                                    keterampilan dan pengetahuan teknologi dasar.</p>
                             </div>
                         </div><!-- End Icon Box -->
 
@@ -237,430 +230,30 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="5365" data-purecounter-duration="1"
-                    class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="5365" data-purecounter-duration="1"
+                                  class="purecounter"></span>
                         <p>Microsoft Office Specialist</p>
                     </div>
                 </div><!-- End Stats Item -->
 
                 <div class="col-lg-4 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1156" data-purecounter-duration="1"
-                    class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="1156" data-purecounter-duration="1"
+                                  class="purecounter"></span>
                         <p>Microsoft Technology Associate</p>
                     </div>
                 </div><!-- End Stats Item -->
 
                 <div class="col-lg-4 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="399" data-purecounter-duration="1"
-                    class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="399" data-purecounter-duration="1"
+                                  class="purecounter"></span>
                         <p>Microsoft Certified Fundametals</p>
                     </div>
                 </div>
 
             </div>
     </section><!-- End Stats Counter Section -->
-
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-header">
-                <h2>Our Team</h2>
-                <p>Check Our <span>Team</span></p>
-            </div>
-
-            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-                <li class="nav-item">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-                        <h4>Proctor</h4>
-                    </a>
-                </li><!-- End tab nav item -->
-
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-                        <h4>TRAINER 1</h4>
-                    </a><!-- End tab nav item -->
-
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-                        <h4>TRAINER 2</h4>
-                    </a>
-                </li><!-- End tab nav item -->
-
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-                        <h4>OUR TEAM</h4>
-                    </a>
-                </li><!-- End tab nav item -->
-
-            </ul>
-
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-
-                <div class="tab-pane fade active show" id="menu-starters">
-
-                    <div class="tab-header text-center">
-                        <p>Teams</p>
-                        <h3>Proctor</h3>
-                    </div>
-
-                    <div class="row gy-5">
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="{% static 'assets/img/menu/menu-item-1.png' %}" class="glightbox"><img
-                                    src="{% static 'assets/img/team/Pak-Jat.png' %}"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>HENDRA JATNIKA</h4>
-                            <p class="price">
-                                KEPALA ITCC
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets{% static '/img/menu/menu-item-2.png' %}" class="glightbox"><img
-                                    src="{% static 'assets/img/team/pak_bedi.png' %}"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>HERMAN BEDI A</h4>
-                            <p class="ingredients">
-
-                            </p>
-                            <p class="price">
-
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
-                                    src="assets/img/team/pak_yoga.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Yoga Distra</h4>
-                            <p class="ingredients">
-
-                            </p>
-                            <p class="price">
-
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-4.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-5.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-6.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Laboriosam Direva</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $9.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                    </div>
-                </div><!-- End Starter Menu Content -->
-
-                <div class="tab-pane fade" id="menu-breakfast">
-
-                    <div class="tab-header text-center">
-                        <p>Menu</p>
-                        <h3>Breakfast</h3>
-                    </div>
-
-                    <div class="row gy-5">
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-1.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Magnam Tiste</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $5.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-2.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Aut Luia</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $14.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-3.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Est Eligendi</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $8.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-4.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-5.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-6.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Laboriosam Direva</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $9.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                    </div>
-                </div><!-- End Breakfast Menu Content -->
-
-                <div class="tab-pane fade" id="menu-lunch">
-
-                    <div class="tab-header text-center">
-                        <p>Menu</p>
-                        <h3>Lunch</h3>
-                    </div>
-
-                    <div class="row gy-5">
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-1.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Magnam Tiste</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $5.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-2.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Aut Luia</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $14.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-3.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Est Eligendi</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $8.95'
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-4.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-5.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-6.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Laboriosam Direva</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $9.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                    </div>
-                </div><!-- End Lunch Menu Content -->
-
-                <div class="tab-pane fade" id="menu-dinner">
-
-                    <div class="tab-header text-center">
-                        <p>Menu</p>
-                        <h3>Dinner</h3>
-                    </div>
-
-                    <div class="row gy-5">
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-1.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Magnam Tiste</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $5.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-2.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Aut Luia</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $14.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-3.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Est Eligendi</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $8.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-4.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-5.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Eos Luibusdam</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $12.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                        <div class="col-lg-4 menu-item">
-                            <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
-                                    src="assets/img/menu/menu-item-6.png"
-                                    class="menu-img img-fluid" alt=""></a>
-                            <h4>Laboriosam Direva</h4>
-                            <p class="ingredients">
-                                Lorem, deren, trataro, filede, nerada
-                            </p>
-                            <p class="price">
-                                $9.95
-                            </p>
-                        </div><!-- Menu Item -->
-
-                    </div>
-                </div><!-- End Dinner Menu Content -->
-
-            </div>
-
-        </div>
-    </section><!-- End Menu Section -->
 
 
     <!-- ======= Events Section ======= -->
@@ -675,31 +268,34 @@
             <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-1">
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-2">
                         <h3>MCF</h3>
-                        <div class="price align-self-start">MCF Ang.2020, MTCNA Ang.2021, dan MOS BMPSI Ang.2021</div>
+                        <div class="price align-self-start">MCF Ang.2020, MTCNA Ang.2021, dan MOS BMPSI Ang.2021
+                        </div>
                         <p class="description">
                             Halo Mahasiswa ITPLN!!
-                            Berdasarkan acuan mutu capaian pembelajaran dan kelengkapan SKPI, mahasiswa lulusan ITPLN
-                            diwajibkan
+                            Berdasarkan acuan mutu capaian pembelajaran dan kelengkapan SKPI, mahasiswa lulusan
+                            ITPLN diwajibkan
                             memenuhi persyaratan administratif sebelum pelaksanaan sidang/yudisium kelulusan..
                         </p>
                     </div><!-- End Event item -->
 
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-2">
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-3">
                         <h3>BMPSI</h3>
-                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020
+                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
+                            2020
                         </div>
                         <p class="description">
-                            Bagi peserta sertifikasi Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020, Jadwal
-                            Training
+                            Bagi peserta sertifikasi Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020,
+                            Jadwal Training
                             sudah bisa dilihat di Web ITCC (bisa juga klik link di bio)..
                         </p>
                     </div><!-- End Event item -->
 
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end mcf-3">
+                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-4">
                         <h3>BMPSI</h3>
-                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020
+                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
+                            2020
                         </div>
                         <p class="description">
                             Bagi peserta sertifikasi Microsoft Office Specialist (MOS) BMPSI Angkatan 2021, Jadwal
@@ -715,163 +311,93 @@
         </div>
     </section><!-- End Events Section -->
 
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
-        <div class="container" data-aos="fade-up">
 
-            <div class="section-header">
-                <h2>Chefs</h2>
-                <p>Our <span>Proffesional</span> Chefs</p>
-            </div>
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="chef-member">
-                        <div class="member-img">
-                            <img src="{% static 'assets/img/chefs/chefs-1.jpg' %}" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Master Chef</span>
-                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
-                                exercitationem iure minima enim corporis et voluptate.</p>
-                        </div>
-                    </div>
-                </div><!-- End Chefs Member -->
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="chef-member">
-                        <div class="member-img">
-                            <img src="{% static 'assets/img/chefs/chefs-2.jpg' %}" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Bintang pratomo</h4>
-                            <span>Patissier</span>
-                            <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
-                                corporis.
-                                Voluptate sed quas reiciendis animi neque sapiente.</p>
-                        </div>
-                    </div>
-                </div><!-- End Chefs Member -->
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                    <div class="chef-member">
-                        <div class="member-img">
-                            <img src="{% static 'assets/img/chefs/chefs-3.jpg' %}" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>Cook</span>
-                            <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates
-                                enim aut
-                                architecto porro aspernatur molestiae modi.</p>
-                        </div>
-                    </div>
-                </div><!-- End Chefs Member -->
-
-            </div>
-
-        </div>
-    </section><!-- End Chefs Section -->
-
-    <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
+    <!-- ======= form Section ======= -->
+    <section id="form" class="book-a-table ">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <h2 class="text-center">Validasi</h2>
-                <p class="text-center">Check <span>Your Profile</span> Now</p>
+                <p class="text-center">Upload <span>Your Sertification</span> Here</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-7 d-flex align-items-center justify-content-center reservation-form-bg">
-                    <form action="{% url 'certifi:upload-page' %}" method="post" enctype="multipart/form-data" class="php-email-form "
-                          data-aos="fade-up"
-                          data-aos-delay="100">
-                        {% csrf_token %}
-                        {% load crispy_forms_tags %}
-                        {{ form.media }}
-                        {{ form | crispy }}
-                        <div class="row mb-3 mt-2">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Permintaan Anda sudah di Proses</div>
-                        </div>
-                        <div class="text-center justify-content-center mx-3 ">
-                            <button type="submit">Save</button>
-                        </div>
-                    </form>
-                </div><!-- End Reservation Form -->
-            </div>
+                    <div class="php-email-form " data-aos="fade-up" data-aos-delay="100">
+                        <form action="{% url 'certifi:upload-page' %}" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% load crispy_forms_tags %}
+                            {{ form.media }}
+                            {{ form | crispy }}
+                            <div class="row mb-3 mt-2">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Permintaan Anda sudah di Proses</div>
+                            </div>
+                            <div class="text-center justify-content-center  ">
+                                <button type="submit">SAVE</button>
+                            </div>
+                        </form>
 
-        </div>
-    </section><!-- End Book A Table Section -->
+
+
+                    </div><!-- End Reservation Form -->
+                </div>
+
+            </div>
+    </section><!-- End form Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
+    <section id="search" class="gallery section-bg contact">
         <div class="container" data-aos="fade-up">
-
             <div class="section-header">
-                <h2>gallery</h2>
-                <p>Check <span>Our Gallery</span></p>
+                <h2 class="text-center">Validasi</h2>
+                <p class="text-center">Check <span>Your Sertification</span> Now</p>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 align-items-center justify-content-center reservation-form-bg">
+                    <div class="php-email-form p-3 p-md-4 form-checking">
+                        <form method="get" action="{% url 'certifi:landing-page' %}#search">
+                            <div class="row">
+                                <div class="col-12 form-group">
+                                    <input type="text" name="q" id="q" class="form-control" placeholder="NIM / Nama / NIDN / Prodi">
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-danger">Find</button>
+                                </div>
+                            </div>
+                        </form>
 
-            <div class="gallery-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-1.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-2.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-3.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-3.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-4.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-4.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-5.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-5.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-6.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-6.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-7.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-7.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                    <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                                                 href="{% static 'assets/img/gallery/gallery-8.jpg' %}"><img
-                            src="{% static 'assets/img/gallery/gallery-8.jpg' %}" class="img-fluid"
-                            alt=""></a></div>
-                </div>
-                <div class="swiper-pagination"></div>
+                        {% if query %}
+                        <div class="scroll">
+                            {% for q in query %}
+                            <div class="card mt-5">
+                                <div class="card-header">
+                                    <h5 class="card-title">{{ q.nim }}</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Nama Mahasiswa    : {{ q.full_name }}</p>
+                                    <p class="card-text">Prodi Mahasiswa   : {{ q.prodi }}</p>
+                                    <p class="card-text">Jenis Sertifikasi : {{ q.type }}</p>
+                                    <p class="card-text">Nomor NIDN        : {{ q.nidn }}</p>
+                                    <p class="card-text ">File Sertifikasi  :
+                                    <a href="{{ q.file.url }}" class="glightbox">{{ q.filename }}</a>
+                                    </p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div><!--End Contact Form -->
+                </div><!-- End Reservation Form -->
+
             </div>
 
         </div>
+
     </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -935,31 +461,6 @@
 
             </div>
 
-            <form action="" method="post" role="form" class="php-email-form p-3 p-md-4">
-                <div class="row">
-                    <div class="col-xl-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="col-xl-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                               required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center">
-                    <button type="submit">Send Message</button>
-                </div>
-            </form><!--End Contact Form -->
 
         </div>
     </section><!-- End Contact Section -->
@@ -1045,17 +546,19 @@
 <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
 <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
 <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-
+<!--<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- Template Main JS File -->
 <script src="{% static 'assets/js/main.js' %}"></script>
-    {% if messages %}
-    <script>
-        {% for msg in messages %}
-        alert("{{ msg }}");
-        {% endfor %}
-    </script>
-    {% endif %}
+
+{% if messages %}
+{% for msg in messages %}
+<script>
+    alert('{{ msg }}');
+</script>
+{% endfor %}
+{% endif %}
 </body>
 
 </html>

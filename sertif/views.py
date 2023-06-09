@@ -13,6 +13,13 @@ class LandingPage(View):
     def get(self, *args, **kwargs):
         form = UploadFileForms()
         context = {'form': form}
+        q = self.request.GET.get('q')
+        if q:
+            query = UploadedFile.objects.filter(
+                __(nim__icontains=q) | __(full_name__icontains=q) | __(prodi__icontains=q) | __(nidn__icontains=q))
+            messages.info(self.request, 'data tidak ditemukan !') if not query else None
+            context['query'] = query
+
         return render(self.request, self.template_name, context)
 
 
@@ -28,6 +35,9 @@ class UploadFileView(CreateView):
         if find_data(self.model, nim, type):
             messages.info(self.request, f"Data {type} untuk {nim} sudah ada!")
             return redirect(reverse('certifi:landing-page'))
+        else:
+            messages.info(self.request, f"Data {type} untuk {nim} berhasiil di simpan!")
+
         return super().form_valid(form)
 
     def get_success_url(self):

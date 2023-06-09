@@ -14,8 +14,10 @@ class CertificateType(models.Model):
 class UploadedFile(models.Model):
     full_name = models.CharField(max_length=255)
     nim = models.CharField(max_length=255)
+    prodi = models.CharField(max_length=255)
     type = models.ForeignKey(CertificateType, on_delete=models.CASCADE)
     file = models.FileField(upload_to='file/')
+    nidn = models.CharField(max_length=255)
     upload_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -32,7 +34,7 @@ class UploadedFile(models.Model):
         except ObjectDoesNotExist as e:
             print("file does not exist!")
 
-        return super().delete(using=None, *args, **kwargs)
+        return super().delete(*args, **kwargs)
 
     def date(self):
         return self.upload_date.strftime("%d - %m - %y : %h:%m")

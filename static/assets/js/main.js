@@ -1,10 +1,3 @@
-/**
-* Template Name: Yummy
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -238,5 +231,33 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
+
+
+  document.querySelector("#form-pendataan").addEventListener("submit", (element) => {
+    element.preventDefault()
+
+    axios({
+      url: "http://127.0.0.1:5500/forms/book-a-table.php",
+      method : "post",
+      data : {
+        nama : document.querySelector("#nama").value,
+        nim : document.querySelector("#nim").value
+      }
+    })
+    .then(response => {
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
+    })
+    .catch(error => {
+      Swal.fire(
+        'Respons Failed!',
+        'You clicked the button!',
+        'Warning'
+      )
+    })
+  })
 
 });

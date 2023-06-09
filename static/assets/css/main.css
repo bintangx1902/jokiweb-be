@@ -1167,7 +1167,7 @@ section {
 }
 
 .book-a-table .reservation-form-bg {
-  background: rgba(55, 55, 63, 0.04);
+  background: rgba(233, 23, 89, 0.04);
 }
 
 .book-a-table .php-email-form {
@@ -1640,4 +1640,6 @@ section {
 
 .footer .credits a {
   color: #fff;
+
+
 }
