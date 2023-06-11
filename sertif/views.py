@@ -31,12 +31,20 @@ class UploadFileView(CreateView):
     def form_valid(self, form):
         nim = form.cleaned_data.get('nim')
         type = form.cleaned_data.get('type')
+        slug_list = [x.slug for x in self.model.all()]
 
         if find_data(self.model, nim, type):
             messages.info(self.request, f"Data {type} untuk {nim} sudah ada!")
             return redirect(reverse('certifi:landing-page'))
         else:
             messages.info(self.request, f"Data {type} untuk {nim} berhasiil di simpan!")
+
+        while True:
+            slug = create_slug(12)
+            if slug not in slug_list:
+                break
+
+        form.instance.slug = slug
 
         return super().form_valid(form)
 
@@ -54,3 +62,13 @@ class FindFile(ListView):
         model = self.model
         query = model.objects.filter(__(nim__icontains=q) | __(full_name__icontains=q)) if q else model.objects.all()
         return query
+
+
+class DataDetails(DetailView):
+    model = UploadedFile
+    template_name = None
+    context_object_name = 'data'
+    query_pk_and_slug = True
+    slug_field = 'slug'
+    slug_url_kwarg = 'slug'
+
