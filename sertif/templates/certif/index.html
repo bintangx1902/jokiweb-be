@@ -313,37 +313,7 @@
 
 
     <!-- ======= form Section ======= -->
-    <section id="form" class="book-a-table ">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2 class="text-center">Validasi</h2>
-                <p class="text-center">Upload <span>Your Sertification</span> Here</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7 d-flex align-items-center justify-content-center reservation-form-bg">
-                    <div class="php-email-form " data-aos="fade-up" data-aos-delay="100">
-                        <form action="{% url 'certifi:upload-page' %}" method="post" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            {% load crispy_forms_tags %}
-                            {{ form.media }}
-                            {{ form | crispy }}
-                            <div class="row mb-3 mt-2">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Permintaan Anda sudah di Proses</div>
-                            </div>
-                            <div class="text-center justify-content-center  ">
-                                <button type="submit">SAVE</button>
-                            </div>
-                        </form>
 
-
-
-                    </div><!-- End Reservation Form -->
-                </div>
-
-            </div>
-    </section><!-- End form Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="search" class="gallery section-bg contact">
@@ -376,16 +346,13 @@
                             {% for q in query %}
                             <div class="card mt-5">
                                 <div class="card-header">
-                                    <h5 class="card-title">{{ q.nim }}</h5>
+                                    <h5 class="card-title">{{ q.no_participant }}</h5>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">Nama Mahasiswa    : {{ q.full_name }}</p>
-                                    <p class="card-text">Prodi Mahasiswa   : {{ q.prodi }}</p>
-                                    <p class="card-text">Jenis Sertifikasi : {{ q.type }}</p>
-                                    <p class="card-text">Nomor NIDN        : {{ q.nidn }}</p>
-                                    <p class="card-text ">File Sertifikasi  :
-                                    <a href="{{ q.file.url }}" class="glightbox">{{ q.filename }}</a>
-                                    </p>
+                                    <p class="card-text">Jenis Sertifikasi : {{ q.type_certification }}</p>
+                                    <p class="card-text">Status            : {{ q.status }}</p>
+                                    <a href="" class="btn btn-danger">Lihat Detail</a>
                                 </div>
                             </div>
                             {% endfor %}

@@ -5,6 +5,8 @@ from .forms import *
 from django.db.models import Q as __
 from .utils import *
 from django.contrib import messages
+from django.db.models.functions import Concat
+from django.db.models import Value
 
 
 class LandingPage(View):
@@ -16,7 +18,8 @@ class LandingPage(View):
         q = self.request.GET.get('q')
         if q:
             query = Certification.objects.filter(
-                __(nim__icontains=q) | __(full_name__icontains=q) | __(prodi__icontains=q) | __(nidn__icontains=q))
+                __(full_name__icontains=q) | __(batch__icontains=q) | __(no_participant__icontains=q) | __(
+                    type_certification__icontains=q))
             messages.info(self.request, 'data tidak ditemukan !') if not query else None
             context['query'] = query
 
@@ -71,4 +74,3 @@ class DataDetails(DetailView):
     query_pk_and_slug = True
     slug_field = 'slug'
     slug_url_kwarg = 'slug'
-

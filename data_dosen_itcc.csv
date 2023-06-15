@@ -1,0 +1,21 @@
+id,nama_lengkap,program,kelompok_ujian,no_peserta,status
+1,"Andi Dahroni, ST., M.Kom.",Excel,DE-MOS20-1,DE-MOS20-1-1,LULUS
+2,"Dwina Kuswardani, Dra., M.Kom",Excel,DE-MOS20-1,DE-MOS20-1-2,LULUS
+3,"Hasna Satya Dini, ST., MT.",Excel,DE-MOS20-1,DE-MOS20-1-3,LULUS
+4,"Herman Bedi A, S.Si., M.Kom",Excel,DE-MOS20-1,DE-MOS20-1-4,LULUS
+5,"Indah Handayasari, ST., MT",PowerPoint Excel,DE-MOS20-1,DE-MOS20-1-5,LULUS
+6,"Irma Sepriyanna, ST., MT",Excel,DE-MOS20-1,DE-MOS20-1-6,LULUS
+7,"Miftahul Fikri, S.Si., M.Si.",Excel,DE-MOS20-1,DE-MOS20-1-7,LULUS
+8,"Muchamad Nur Qosim, ST., MT",Excel,DE-MOS20-1,DE-MOS20-1-8,LULUS
+9,"Muhammad Fadli Prathama, S.Si., MMSI",Excel,DE-MOS20-1,DE-MOS20-1-9,LULUS
+10,"Sutrisno, S.Sos",Excel,DE-MOS20-1,DE-MOS20-1-10,TIDAK LULUS
+11,"Abdurrasyid, S.Kom., MMSI",Mikrotik Certified Network Associate (MCTNA),,,LULUS
+12,,MikroTik Certified Routing Engineer (MTCRE),,,LULUS
+13,"Karina Djunaidi, ST., MTI",Mikrotik Certified Network Associate (MCTNA),,,LULUS
+14,,MikroTik Certified Routing Engineer (MTCRE),,,LULUS
+15,"Riki Ruli Affandi S., S.Kom., M.Kom",Mikrotik Certified Network Associate (MCTNA),,,LULUS
+16,,MikroTik Certified Routing Engineer (MTCRE),,,LULUS
+17,"Hendra Jatnika, S.KOM., M.KOM",Mikrotik Certified Network Associate (MCTNA),,,LULUS
+18,,MikroTik Certified Routing Engineer (MTCRE),,,LULUS
+19,"Rakhmadi Irfansyah Putra, S.Kom., MMSI",Mikrotik Certified Network Associate (MCTNA),,,LULUS
+20,,MikroTik Certified Routing Engineer (MTCRE),,,LULUS
