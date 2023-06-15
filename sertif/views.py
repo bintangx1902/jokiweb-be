@@ -15,7 +15,7 @@ class LandingPage(View):
         context = {'form': form}
         q = self.request.GET.get('q')
         if q:
-            query = UploadedFile.objects.filter(
+            query = Certification.objects.filter(
                 __(nim__icontains=q) | __(full_name__icontains=q) | __(prodi__icontains=q) | __(nidn__icontains=q))
             messages.info(self.request, 'data tidak ditemukan !') if not query else None
             context['query'] = query
@@ -25,7 +25,7 @@ class LandingPage(View):
 
 class UploadFileView(CreateView):
     form_class = UploadFileForms
-    model = UploadedFile
+    model = Certification
     template_name = get_template('upload')
 
     def form_valid(self, form):
@@ -53,7 +53,7 @@ class UploadFileView(CreateView):
 
 
 class FindFile(ListView):
-    model = UploadedFile
+    model = Certification
     template_name = get_template('data-list')
     context_object_name = 'files'
 
@@ -65,7 +65,7 @@ class FindFile(ListView):
 
 
 class DataDetails(DetailView):
-    model = UploadedFile
+    model = Certification
     template_name = None
     context_object_name = 'data'
     query_pk_and_slug = True

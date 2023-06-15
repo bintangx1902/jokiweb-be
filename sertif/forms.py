@@ -4,5 +4,5 @@ from .models import *
 
 class UploadFileForms(forms.ModelForm):
     class Meta:
-        model = UploadedFile
+        model = Certification
         fields = '__all__'
