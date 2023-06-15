@@ -14,8 +14,11 @@ class LandingPage(View):
 
     def get(self, *args, **kwargs):
         form = UploadFileForms()
-        context = {'form': form}
         q = self.request.GET.get('q')
+        mos = len(Certification.objects.filter(type_certification__icontains='MOS'))
+        mta = len(Certification.objects.filter(type_certification__icontains='MTA'))
+        mce = len(Certification.objects.filter(type_certification__icontains='MCE'))
+        context = {'form': form, 'mos': mos, 'mce': mce, 'mta': mta}
         if q:
             query = Certification.objects.filter(
                 __(full_name__icontains=q) | __(batch__icontains=q) | __(no_participant__icontains=q) | __(
