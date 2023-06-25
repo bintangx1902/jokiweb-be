@@ -75,7 +75,6 @@
                 <li><a href="#pln">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#sertifikasi">Sertifikasi</a></li>
-                <li><a href="#form">Registrasi</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav><!-- .navbar -->
@@ -328,7 +327,7 @@
                         <form method="get" action="{% url 'certifi:landing-page' %}#search">
                             <div class="row">
                                 <div class="col-12 form-group">
-                                    <input type="text" name="q" id="q" class="form-control" placeholder="NIM / Nama / NIDN / Prodi">
+                                    <input type="text" name="q" id="q" class="form-control" placeholder="1 Kata Nama / Tipe Sertif / Nomor Peserta">
                                 </div>
                                 <div class="my-3">
                                     <div class="loading">Loading</div>
@@ -350,8 +349,13 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">Nama Mahasiswa    : {{ q.full_name }}</p>
+                                    {% if q.type_certification %}
                                     <p class="card-text">Jenis Sertifikasi : {{ q.type_certification }}</p>
-                                    <p class="card-text">Status            : {{ q.status }}</p>
+                                    {% elif q.program %}
+                                    <p class="card-text">Jenis Sertifikasi : {{ q.program }}</p>
+                                    {% else %}
+                                    {% endif %}
+<!--                                    <p class="card-text">Status            : {{ q.status }}</p>-->
                                     <a href="" class="btn btn-danger">Lihat Detail</a>
                                 </div>
                             </div>

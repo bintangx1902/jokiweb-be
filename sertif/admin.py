@@ -3,3 +3,5 @@ from .models import *
 
 site.register(Certification)
 site.register(CertificateType)
+site.register(LecturerCertification)
+site.register(MikroTikCertification)

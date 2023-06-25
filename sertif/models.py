@@ -20,3 +20,22 @@ class Certification(models.Model):
 
     def __str__(self):
         return f"{self.full_name} - {self.no_participant}"
+
+
+class LecturerCertification(models.Model):
+    full_name = models.CharField(max_length=255)
+    program = models.CharField(max_length=255)
+    batch = models.CharField(max_length=255)
+    no_participant = models.CharField(max_length=255)
+    status = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.full_name} - {self.program}"
+
+
+class MikroTikCertification(models.Model):
+    full_name = models.CharField(max_length=255)
+    status = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.full_name} - {self.status}"
