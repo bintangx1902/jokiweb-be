@@ -28,7 +28,7 @@ class LandingPage(View):
                 __(full_name__icontains=q) | __(batch__icontains=q) | __(no_participant__icontains=q) | __(
                     program__icontains=q))
 
-            # messages.info(self.request, 'data tidak ditemukan !') if not query else None
+            messages.info(self.request, 'data tidak ditemukan !') if not query else None
             context['query'] = list(chain(query, query2, query3))
 
         return render(self.request, self.template_name, context)
