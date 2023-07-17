@@ -14,15 +14,17 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
+    <!--
     <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> 
+    -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -55,481 +57,608 @@
             overflow-y: scroll;
             max-height: 300px;
         }
+
+        .bi-mce::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            height: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            background-image: url("{% static 'assets/ms/MCE.png' %}");
+            /* Ganti path dengan path gambar ikon yang diinginkan */
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* Sesuaikan ukuran gambar jika diperlukan */
+        }
+
+        .bi-mikrotik::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            height: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            background-image: url("{% static 'assets/ms/Mikrotik.png' %}");
+            /* Ganti path dengan path gambar ikon yang diinginkan */
+            background-repeat: no-repeat;
+            background-size: contain;
+          
+        }
+
+        .bi-ld::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            height: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            background-image: url("{% static 'assets/ms/training-center.png' %}");
+            /* Ganti path dengan path gambar ikon yang diinginkan */
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bi-mos::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            height: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            background-image: url("{% static 'assets/ms/MOS-Badge.png' %}");
+            /* Ganti path dengan path gambar ikon yang diinginkan */
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bi-mcf::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            height: 80px;
+            /* Sesuaikan ukuran dengan kebutuhan */
+            background-image: url("{% static 'assets/ms/microsoft-certified-fundamentals-badge-615x615-1.png' %}");
+            /* Ganti path dengan path gambar ikon yang diinginkan */
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bi-mta::before {
+            display: inline-block;
+            content: "";
+            vertical-align: middle;
+            width: 80px;
+            height: 80px;
+            background-image: url("{% static 'assets/ms/MTA-Database_Fundamentals.png' %}");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     </style>
 
 </head>
 
 <body>
 
-<!-- ======= Header ======= -->
-<header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 navbar-brand">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="{% static 'assets/Logo.png' %}" alt="" width="200" height="90">
-        </a>
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 navbar-brand">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="{% static 'assets/Logo.png' %}" alt="" width="200" height="90">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#pln">Home</a></li>
+                    <li><a href="https://itcc.itpln.ac.id/">ITCC</a></li>
+                    <li><a href="https://infopmb.itpln.ac.id/">Info PMB</a></li>
+                    <li><a href="#sertifikasi">News</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
 
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a href="#pln">Homees</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#sertifikasi">Sertifikasi</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav><!-- .navbar -->
+            <a class="btn-book-a-table" href="#search">Search</a>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-        <a class="btn-book-a-table" href="#search">Search</a>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header><!-- End Header -->
 
-    </div>
-</header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<section id="pln" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-        <div class="row justify-content-between gy-5">
-            <div
+    <!-- ======= Hero Section ======= -->
+    <section id="pln" class="hero d-flex align-items-center section-bg">
+        <div class="container">
+            <div class="row justify-content-between gy-5">
+                <div
                     class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-                <h2 data-aos="fade-up">Institut Teknologi<br>PLN</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang
-                    bernaung di
-                    bawah Yayasan Pendidikan dan Kesejahteraan PLN dan Berlokasi di Cengkareng..</p>
-                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://infopmb.itpln.ac.id/" class="btn-book-a-table">JOIN US</a>
-                    <a href="https://youtu.be/B-H9wRigQI4"
-                       class="glightbox btn-watch-video d-flex align-items-center"><i
-                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    <h2 data-aos="fade-up">Institut Teknologi<br>PLN</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang
+                        bernaung di
+                        bawah Yayasan Pendidikan dan Kesejahteraan PLN dan Berlokasi di Cengkareng..</p>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://itpln.ac.id/" class="btn-book-a-table">Learn More</a>
+                        <a href="https://youtu.be/B-H9wRigQI4"
+                            class="glightbox btn-watch-video d-flex align-items-center"><i
+                                class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 order-1 order-lg-2 text-center text-lg-start ">
-                <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out"
-                     data-aos-delay="300">
+                <div class="col-lg-3 order-1 order-lg-2 text-center text-lg-start ">
+                    <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out"
+                        data-aos-delay="300">
+                </div>
             </div>
         </div>
-    </div>
-</section><!-- End Hero Section -->
+    </section><!-- End Hero Section -->
 
-<main id="main">
+    <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
 
-            <div class="section-header">
-                <h2>About Us</h2>
-                <p>Learn More <span>About ITCC</span></p>
-            </div>
-
-            <div class="row gy-4">
-                <div class="col-lg-7 position-relative about-img img-1" data-aos="fade-up" data-aos-delay="150">
+                <div class="section-header">
+                    <h2>About Us</h2>
+                    <p>Learn More <span>About ITCC</span></p>
                 </div>
-                <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-                    <div class="content ps-0 ps-lg-5">
-                        <p class="fst-italic">
-                            Information Technology Certification Center (ITCC) merupakan unit yang dimiliki oleh
-                            Institut Teknologi
-                            PLN Jakarta yang telah mendapatkan hak otorisasi dari Certiport Inc sebagai Certiport
-                            Authorized Testing
-                            Center (CATC) untuk menyelenggarakan pelatihan dan sertifikasi Internasional.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check2-all"></i> Menjadi wahana pelatihan.</li>
-                            <li><i class="bi bi-check2-all"></i> sertifikasi di bidang teknologi informasi yang
-                                modern.
-                            </li>
-                            <li><i class="bi bi-check2-all"></i> mandiri, unggul, dan berbudaya.</li>
-                        </ul>
-                        <p>
-                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
-                            laboratorium yang
-                            menangani beberapa program sertifikasi berskala internasional,
-                            diperlukan adanya keselarasaan pemanfaatan sistem informasi dan teknologi informasi yang
-                            sesuai dengan
-                            kebutuhan disaat ini dan yang akan datang, sehingga diperlukan kerangka acuan untuk
-                            membangun sebuah
-                            arsitektur enterprise.
-                        </p>
 
-                        <div class="position-relative mt-4">
-                            <img src="{% static 'assets/Logo.png' %}" class="img-fluid" alt="">
-                            <a href="https://youtu.be/jEu3j5C-KeY" class="glightbox play-btn"></a>
-                        </div>
+                <div class="row gy-4">
+                    <div class="col-lg-7 position-relative about-img img-1" data-aos="fade-up" data-aos-delay="150">
                     </div>
-                </div>
-            </div>
+                    <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+                        <div class="content ps-0 ps-lg-5">
+                            <p class="fst-italic">
+                                Information Technology Certification Center (ITCC) merupakan unit yang dimiliki oleh
+                                Institut Teknologi
+                                PLN Jakarta yang telah mendapatkan hak otorisasi dari Certiport Inc sebagai Certiport
+                                Authorized Testing
+                                Center (CATC) untuk menyelenggarakan pelatihan dan sertifikasi Internasional.
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check2-all"></i> Menjadi wahana pelatihan.</li>
+                                <li><i class="bi bi-check2-all"></i> sertifikasi di bidang teknologi informasi yang
+                                    modern.
+                                </li>
+                                <li><i class="bi bi-check2-all"></i> mandiri, unggul, dan berbudaya.</li>
+                            </ul>
+                            <p>
+                                Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
+                                laboratorium yang
+                                menangani beberapa program sertifikasi berskala internasional,
+                                diperlukan adanya keselarasaan pemanfaatan sistem informasi dan teknologi informasi yang
+                                sesuai dengan
+                                kebutuhan disaat ini dan yang akan datang, sehingga diperlukan kerangka acuan untuk
+                                membangun sebuah
+                                arsitektur enterprise.
+                            </p>
 
-        </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-        <div class="container" data-aos="fade-up">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="why-box">
-                        <h3>ITCC</h3>
-                        <p>
-                            Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
-                            laboratorium yang
-                            menangani beberapa program sertifikasi berskala internasional
-                        </p>
-                        <div class="text-center">
-                            <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                            <div class="position-relative mt-4">
+                                <img src="{% static 'assets/Logo.png' %}" class="img-fluid" alt="">
+                                <a href="https://youtu.be/jEu3j5C-KeY" class="glightbox play-btn"></a>
+                            </div>
                         </div>
-                    </div>
-                </div><!-- End Why Box -->
-
-                <div class="col-lg-8 d-flex align-items-center">
-                    <div class="row gy-4">
-
-                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-microsoft"></i>
-                                <h4>Microsoft Office Specialist</h4>
-                                <p>Microsoft Office Specialist menunjukkan bahwa Anda memiliki keahlian yang
-                                    diperlukan untuk memanfaatkan Office sebaik mungkin</p>
-                            </div>
-                        </div><!-- End Icon Box -->
-
-                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-microsoft"></i>
-                                <h4>Microsoft Technology Associate</h4>
-                                <p>Sertifikasi Microsoft Technology Associate sebuah program sertifikasi yang
-                                    ditujukan bagi seseorang yang bekerja atau tenaga profesional di bidang IT</p>
-                            </div>
-                        </div><!-- End Icon Box -->
-
-                        <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                <i class="bi bi-microsoft"></i>
-                                <h4>Microsoft Certified Fundamentals</h4>
-                                <p>Microsoft Certified Fundamentals adalah sertifikasi tingkat awal yang memvalidasi
-                                    keterampilan dan pengetahuan teknologi dasar.</p>
-                            </div>
-                        </div><!-- End Icon Box -->
-
                     </div>
                 </div>
 
             </div>
+        </section><!-- End About Section -->
 
-        </div>
-    </section><!-- End Why Us Section -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container" data-aos="fade-up">
 
-    <!-- ======= Stats Counter Section ======= -->
-    <section id="stats-counter" class="stats-counter">
-        <div class="container" data-aos="zoom-out">
+                <div class="row gy-4">
 
-            <div class="row gy-4 text-center">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="why-box">
+                            <h3>ITCC</h3>
+                            <p>
+                                Laboratorium Information Technology Certification Center (ITCC) IT PLN adalah
+                                laboratorium yang
+                                menangani beberapa program sertifikasi berskala internasional
+                            </p>
+                            <div class="text-center">
+                                <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End Why Box -->
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ mos }}" data-purecounter-duration="1"
-                                  class="purecounter"></span>
-                        <p>Microsoft Office Specialist</p>
+                    <div class="col-lg-8 d-flex align-items-center">
+                        <div class="row gy-4">
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-mos"></i>
+                                    <h4>Microsoft Office Specialist</h4>
+                                    <p>Microsoft Office Specialist adalah sertifikasi untuk memberikan penilaian
+                                        keterampilan dan pengetahuan terhadap dunia IT yang dimana semakin terus menerus
+                                        berkembang dengan memberikan siswa dan profesional latihan untuk menilai
+                                        pemahaman mereka tentang penggunaan aplikasi Microsoft Office.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-mce"></i>
+                                    <h4>Microsoft Certified Educator</h4>
+                                    <p>Microsoft Certified Educator atau MCE adalah salah satu sertifikasi bagi pendidik
+                                        atau pengajar. Dimana sertifikasi yang satu ini terverifikasi langsung oleh
+                                        Microsoft. Untuk sertifikasi Microsoft Certified
+                                        Educator dirancang untuk menilai tingkat kemampuan pengajar dengan menggunakan
+                                        sistem informasi</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-mta"></i>
+                                    <h4>Microsoft Technology Associate</h4>
+                                    <p>Microsoft Technology Associate adalah sertifikasi tingkat pemula yang memvalidasi
+                                        keterampilan dan pengetahuan teknologi dasar dalam produk Microsoft. Ujian MTA
+                                        dirancang untuk menilai dan memvalidasi konsep teknis inti di tiga bidang utama:
+                                        Basis Data, Pengembangan, dan Infrastruktur TI.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-ld"></i>
+                                    <h4>Learning & Development</h4>
+                                    <p>Learning and Development adalah Bidang inovasi ITCC ITPLN yang bekerja untuk
+                                        merancang dan membuat kegiatan kompetensi dengan memperkenalkan dunia digital
+                                        dalam era industri yang semakin berkembang baik dalam lingkup internal maupun
+                                        lingkup eksternal. Seperti mengadakan program webinar, workshop, pelatihan
+                                        office 365.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-mikrotik"></i>
+                                    <h4>Mikrotik Certified Network Associate</h4>
+                                    <p>Mikrotik Certified Network Associate (MTCNA) adalah sebuah program sertifikasi
+                                        dalam dunia IT yang diperuntukkan bagi seorang teknisi (Network Engineer) yang
+                                        dirancang untuk mengukur pemahaman mengenai dasar-dasar networking dan dapat meningkatkan atau memberi
+                                        nilai tambah pada Network Engineer tersebut.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi-mcf"></i>
+                                    <h4>Microsoft Certified Fundamentals</h4>
+                                    <p style="font-size: 15px;">Microsoft Certified Fundamentals (MCF) adalah sertifikasi tingkat awal yang
+                                        memvalidasi keterampilan & pengetahuan teknologi dasar. Ujian MCF dirancang
+                                        untuk menilai dan memvalidasi konsep teknis inti dalam tiga area utama: Cloud
+                                        computing, Artificial Intelligence, Microsoft 365, Microsoft Security serta
+                                        layanan berbasis Microsoft Azure.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                        </div>
                     </div>
-                </div><!-- End Stats Item -->
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ mta }}" data-purecounter-duration="1"
-                                  class="purecounter"></span>
-                        <p>Microsoft Technology Associate</p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ mce }}" data-purecounter-duration="1"
-                                  class="purecounter"></span>
-                        <p>Microsoft Certified Fundametals</p>
-                    </div>
                 </div>
 
             </div>
-    </section><!-- End Stats Counter Section -->
+        </section><!-- End Why Us Section -->
 
+        <!-- ======= Stats Counter Section ======= -->
+        <section id="stats-counter" class="stats-counter">
+            <div class="container" data-aos="zoom-out">
 
-    <!-- ======= Events Section ======= -->
-    <section id="sertifikasi" class="events">
-        <div class="container-fluid" data-aos="fade-up">
+                <div class="row gy-4 text-center">
 
-            <div class="section-header">
-                <h2>sertifikasi</h2>
-                <p>sedang <span>Berlangsung</span> Di ITCC</p>
-            </div>
-
-            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-2">
-                        <h3>MCF</h3>
-                        <div class="price align-self-start">MCF Ang.2020, MTCNA Ang.2021, dan MOS BMPSI Ang.2021
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="{{ mos }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Microsoft Office Specialist</p>
                         </div>
-                        <p class="description">
-                            Halo Mahasiswa ITPLN!!
-                            Berdasarkan acuan mutu capaian pembelajaran dan kelengkapan SKPI, mahasiswa lulusan
-                            ITPLN diwajibkan
-                            memenuhi persyaratan administratif sebelum pelaksanaan sidang/yudisium kelulusan..
-                        </p>
-                    </div><!-- End Event item -->
+                    </div><!-- End Stats Item -->
 
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-3">
-                        <h3>BMPSI</h3>
-                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
-                            2020
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="{{ mta }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Microsoft Technology Associate</p>
                         </div>
-                        <p class="description">
-                            Bagi peserta sertifikasi Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020,
-                            Jadwal Training
-                            sudah bisa dilihat di Web ITCC (bisa juga klik link di bio)..
-                        </p>
-                    </div><!-- End Event item -->
+                    </div><!-- End Stats Item -->
 
-                    <div class="swiper-slide event-item d-flex flex-column justify-content-end img-4">
-                        <h3>BMPSI</h3>
-                        <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
-                            2020
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="{{ mce }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Microsoft Certified Fundametals</p>
                         </div>
-                        <p class="description">
-                            Bagi peserta sertifikasi Microsoft Office Specialist (MOS) BMPSI Angkatan 2021, Jadwal
-                            Training sudah
-                            bisa dilihat di Web ITCC (bisa juga klik link di bio)..
-                        </p>
-                    </div><!-- End Event item -->
+                    </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-    </section><!-- End Events Section -->
+        </section><!-- End Stats Counter Section -->
 
 
-    <!-- ======= form Section ======= -->
+        <!-- ======= Events Section ======= -->
+        <section id="sertifikasi" class="events">
+            <div class="container-fluid" data-aos="fade-up">
 
+                <div class="section-header">
+                    <h2>News</h2>
+                    <p>Sedang <span>Berlangsung</span> Di ITCC</p>
+                </div>
 
-    <!-- ======= Gallery Section ======= -->
-    <section id="search" class="gallery section-bg contact">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2 class="text-center">Validasi</h2>
-                <p class="text-center">Check <span>Your Sertification</span> Now</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7 align-items-center justify-content-center reservation-form-bg">
-                    <div class="php-email-form p-3 p-md-4 form-checking">
-                        <form method="get" action="{% url 'certifi:landing-page' %}#search">
-                            <div class="row">
-                                <div class="col-12 form-group">
-                                    <input type="text" name="q" id="q" class="form-control" placeholder="1 Kata Nama / Tipe Sertif / Nomor Peserta">
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                                </div>
-                                <div class="text-center">
-                                    <button class="btn btn-danger">Find</button>
-                                </div>
+                <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end img-2">
+                            <h3>MCF</h3>
+                            <div class="price align-self-start">MCF Ang.2020, MTCNA Ang.2021, dan MOS BMPSI Ang.2021
                             </div>
-                        </form>
+                            <p class="description">
+                                Halo Mahasiswa ITPLN!!
+                                Berdasarkan acuan mutu capaian pembelajaran dan kelengkapan SKPI, mahasiswa lulusan
+                                ITPLN diwajibkan
+                                memenuhi persyaratan administratif sebelum pelaksanaan sidang/yudisium kelulusan..
+                            </p>
+                        </div><!-- End Event item -->
 
-                        {% if query %}
-                        <div class="scroll">
-                            {% for q in query %}
-                            <div class="card mt-5">
-                                <div class="card-header">
-                                    <h5 class="card-title">{{ q.no_participant }}</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Nama Mahasiswa    : {{ q.full_name }}</p>
-                                    {% if q.type_certification %}
-                                    <p class="card-text">Jenis Sertifikasi : {{ q.type_certification }}</p>
-                                    {% elif q.program %}
-                                    <p class="card-text">Jenis Sertifikasi : {{ q.program }}</p>
-                                    {% else %}
-                                    {% endif %}
-<!--                                    <p class="card-text">Status            : {{ q.status }}</p>-->
-                                    <a href="" class="btn btn-danger">Lihat Detail</a>
-                                </div>
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end img-3">
+                            <h3>BMPSI</h3>
+                            <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
+                                2020
                             </div>
-                            {% endfor %}
-                        </div>
-                        {% endif %}
-                    </div><!--End Contact Form -->
-                </div><!-- End Reservation Form -->
+                            <p class="description">
+                                Bagi peserta sertifikasi Microsoft Certified Fundamentals (MCF) BMPSI Angkatan 2020,
+                                Jadwal Training
+                                sudah bisa dilihat di Web ITCC (bisa juga klik link di bio)..
+                            </p>
+                        </div><!-- End Event item -->
+
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end img-4">
+                            <h3>BMPSI</h3>
+                            <div class="price align-self-start">Microsoft Certified Fundamentals (MCF) BMPSI Angkatan
+                                2020
+                            </div>
+                            <p class="description">
+                                Bagi peserta sertifikasi Microsoft Office Specialist (MOS) BMPSI Angkatan 2021, Jadwal
+                                Training sudah
+                                bisa dilihat di Web ITCC (bisa juga klik link di bio)..
+                            </p>
+                        </div><!-- End Event item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Events Section -->
+
+
+        <!-- ======= form Section ======= -->
+
+
+        <!-- ======= Gallery Section ======= -->
+        <section id="search" class="gallery section-bg contact">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="text-center">Validasi</h2>
+                    <p class="text-center">Check <span>Your Sertification</span> Now</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 align-items-center justify-content-center reservation-form-bg">
+                        <div class="php-email-form p-3 p-md-4 form-checking">
+                            <form method="get" action="{% url 'certifi:landing-page' %}#search">
+                                <div class="row">
+                                    <div class="col-12 form-group">
+                                        <input type="text" name="q" id="q" class="form-control"
+                                            placeholder="1 Kata Nama / Tipe Sertif / Nomor Peserta">
+                                    </div>
+                                    <div class="my-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-danger">Find</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            {% if query %}
+                            <div class="scroll">
+                                {% for q in query %}
+                                <div class="card mt-5">
+                                    <div class="card-header">
+                                        <h5 class="card-title">{{ q.no_participant }}</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Nama Mahasiswa : {{ q.full_name }}</p>
+                                        {% if q.type_certification %}
+                                        <p class="card-text">Jenis Sertifikasi : {{ q.type_certification }}</p>
+                                        {% elif q.program %}
+                                        <p class="card-text">Jenis Sertifikasi : {{ q.program }}</p>
+                                        {% else %}
+                                        {% endif %}
+                                        <!--                                    <p class="card-text">Status            : {{ q.status }}</p>-->
+                                        <a href="" class="btn btn-danger">Lihat Detail</a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div><!--End Contact Form -->
+                    </div><!-- End Reservation Form -->
+
+                </div>
 
             </div>
 
-        </div>
+        </section><!-- End Gallery Section -->
 
-    </section><!-- End Gallery Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p><span>Contact Us</span></p>
+                </div>
 
-            <div class="section-header">
-                <h2>Contact</h2>
-                <p><span>Contact Us</span></p>
-            </div>
-
-            <div class="mb-3">
-                <iframe style="border:0; width: 100%; height: 350px;"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253870.0729977381!2d106.42157509453128!3d-6.168251100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f788f60e492d%3A0x8b5ed89a85136510!2sInstitut%20Teknologi%20PLN!5e0!3m2!1sid!2sid!4v1685790709344!5m2!1sid!2sid"
+                <div class="mb-3">
+                    <iframe style="border:0; width: 100%; height: 350px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.71933693523!2d106.72441691476892!3d-6.168325095534198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7250486af45%3A0x1f773f61498491f!2sITCC%20STT-PLN!5e0!3m2!1sid!2sid!4v1689043766213!5m2!1sid!2sid"
                         frameborder="0" allowfullscreen></iframe>
-            </div><!-- End Google Maps -->
+                </div><!-- End Google Maps -->
 
-            <div class="row gy-4">
+                <div class="row gy-4">
 
-                <div class="col-md-6">
-                    <div class="info-item  d-flex align-items-center">
-                        <i class="icon bi bi-map flex-shrink-0"></i>
-                        <div>
-                            <h3>Our Address</h3>
-                            <p>Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
-                        </div>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="col-md-6">
-                    <div class="info-item d-flex align-items-center">
-                        <i class="icon bi bi-envelope flex-shrink-0"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>itcc@itpln.ac.id</p>
-                        </div>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="col-md-6">
-                    <div class="info-item  d-flex align-items-center">
-                        <i class="icon bi bi-telephone flex-shrink-0"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                        </div>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="col-md-6">
-                    <div class="info-item  d-flex align-items-center">
-                        <i class="icon bi bi-share flex-shrink-0"></i>
-                        <div>
-                            <h3>Opening Hours</h3>
-                            <div><strong>Mon-Sat:</strong> 8AM - 4PM;
-                                <strong>Sunday:</strong> Closed
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <i class="icon bi bi-map flex-shrink-0"></i>
+                            <div>
+                                <h3>Our Address</h3>
+                                <p>Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
                             </div>
                         </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="icon bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p><a href="https://itcc.itpln.ac.id/">itcc@itpln.ac.id</a></p>
+                            </div>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <i class="icon bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+6282213053377</p>
+                            </div>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <i class="icon bi bi-share flex-shrink-0"></i>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <div><strong>Mon-Sat:</strong> 8AM - 4PM;
+                                    <strong>Sunday:</strong> Closed
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-geo-alt icon"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>
+                            Cengkareng, Kota Jakarta Barat Daerah Khusus Ibukota Jakarta <br>
+                            Daerah Khusus Ibukota Jakarta, ID<br>
+                        </p>
                     </div>
-                </div><!-- End Info Item -->
 
-            </div>
+                </div>
 
+                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                    <i class="bi bi-telephone icon"></i>
+                    <div>
+                        <h4>Reservations</h4>
+                        <p>
+                            <strong>Phone:</strong> +6282213053377<br>
+                            <strong>Email:</strong> <a href="https://itcc.itpln.ac.id/">itcc@itpln.ac.id</a><br>
+                        </p>
+                    </div>
+                </div>
 
-        </div>
-    </section><!-- End Contact Section -->
+                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                    <i class="bi bi-clock icon"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>
+                            <strong>Mon-Sat: 8AM </strong> - 4PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
 
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
-
-    <div class="container">
-        <div class="row gy-3">
-            <div class="col-lg-3 col-md-6 d-flex">
-                <i class="bi bi-geo-alt icon"></i>
-                <div>
-                    <h4>Address</h4>
-                    <p>
-                        Cengkareng, Kota Jakarta Barat Daerah Khusus Ibukota Jakarta <br>
-                        Daerah Khusus Ibukota Jakarta, ID<br>
-                    </p>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-links d-flex">
+                        <a href="https://api.whatsapp.com/send/?phone=6282213053377&text=Hallo%2C+perkenalkan+nama+saya+%28Nama+Lengkap%29%2C+dengan+NIM+%28NIM%29%2C+dari+Jurusan+%28Jurusan%29+ingin+bertanya.&type=phone_number&app_absent=0"
+                            class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/channel/UCMiYwiAPoALepGjwz7J_IzA" class="youtube"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/itcc.itpln/?hl=id" class="instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@itcc.itpln?lang=en" class="tiktok"><i
+                                class="bi bi-tiktok"></i></a>
+                    </div>
                 </div>
 
             </div>
-
-            <div class="col-lg-3 col-md-6 footer-links d-flex">
-                <i class="bi bi-telephone icon"></i>
-                <div>
-                    <h4>Reservations</h4>
-                    <p>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> itcc@itpln.ac.id<br>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links d-flex">
-                <i class="bi bi-clock icon"></i>
-                <div>
-                    <h4>Opening Hours</h4>
-                    <p>
-                        <strong>Mon-Sat: 8AM </strong> - 4PM<br>
-                        Sunday: Closed
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Follow Us</h4>
-                <div class="social-links d-flex">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>Yusni</span></strong>. All Rights Reserved
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Yusni</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="#">Yusni Yahdian</a>
+            </div>
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">Yusni Yahdian</a>
-        </div>
-    </div>
 
-</footer><!-- End Footer -->
-<!-- End Footer -->
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
 
-<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-<div id="preloader"></div>
+    <div id="preloader"></div>
 
-<!-- Vendor JS Files -->
-<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-<!--<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<!-- Template Main JS File -->
-<script src="{% static 'assets/js/main.js' %}"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <!--<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
-{% if messages %}
-{% for msg in messages %}
-<script>
-    alert('{{ msg }}');
-</script>
-{% endfor %}
-{% endif %}
+    {% if messages %}
+    {% for msg in messages %}
+    <script>
+        alert('{{ msg }}');
+    </script>
+    {% endfor %}
+    {% endif %}
 </body>
 
 </html>

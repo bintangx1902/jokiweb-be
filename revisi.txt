@@ -1,0 +1,17 @@
+itcc linknya ke : https://itcc.itpln.ac.id/
+info pmb: https://infopmb.itpln.ac.id/
+Sertifikasi ganti tulisannya jadi ' News ' done
+
+sesuiakan saja linknya dng medsos itcc ada diweb itcc
+
+trus bagian ini, kalo nyari data tapi ngg ada, ketnya "data tidak ditemukan"
+bagian maps, diganti jadi titik lab itcc
+trus bagian bawah yg email, jadiin link. biar bisa lngsng di klik
+tambahin penjelasan mikrotik mtcna, di penjelasan sertifikasi
+trus bagian sertifikasi, dipakein logo sesuai sertifikasi masing"
+
+1. open terminal
+2. cd /a-dev
+3. venv\Scripts\activate
+4. cd jokiweb-be
+5. python manage.py runserver

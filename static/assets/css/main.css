@@ -1,3 +1,15 @@
+/**
+* Template Name: Yummy
+* Updated: May 30 2023 with Bootstrap v5.3.0
+* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -31,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #29a0dc;
+  color: #ec2727;
   text-decoration: none;
 }
 
@@ -166,7 +178,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #659dca;
+  background: #ec2727;
   color: #fff;
 }
 
@@ -282,7 +294,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(99, 167, 222, 0.717);
+  background: rgba(206, 18, 18, 0.8);
 }
 
 section {
@@ -738,11 +750,10 @@ section {
 }
 
 .why-us .icon-box i {
-  color: var(--color-primary);
+  
   margin-bottom: 30px;
   font-size: 32px;
   margin-bottom: 30px;
-  background: rgba(206, 18, 18, 0.1);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -773,7 +784,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slide3.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1167,7 +1178,7 @@ section {
 }
 
 .book-a-table .reservation-form-bg {
-  background: rgba(233, 23, 89, 0.04);
+  background: rgba(55, 55, 63, 0.04);
 }
 
 .book-a-table .php-email-form {
@@ -1640,6 +1651,4 @@ section {
 
 .footer .credits a {
   color: #fff;
-
-
 }
