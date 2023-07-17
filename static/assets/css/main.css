@@ -750,7 +750,7 @@ section {
 }
 
 .why-us .icon-box i {
-  
+  color: var(--color-primary);
   margin-bottom: 30px;
   font-size: 32px;
   margin-bottom: 30px;
@@ -784,7 +784,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'assets/img/slide3.jpg' %}") center center;
   background-size: cover;
   padding: 100px 0;
 }
