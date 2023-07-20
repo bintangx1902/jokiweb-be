@@ -179,28 +179,27 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="pln" class="hero d-flex align-items-center section-bg">
-        <div class="container">
-            <div class="row justify-content-between gy-5">
-                <div
-                    class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-                    <h2 data-aos="fade-up">Institut Teknologi<br>PLN</h2>
-                    <p data-aos="fade-up" data-aos-delay="100">Institut Teknologi PLN adalah perguruan tinggi yang
-                        bernaung di
-                        bawah Yayasan Pendidikan dan Kesejahteraan PLN dan Berlokasi di Cengkareng..</p>
-                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://itpln.ac.id/" class="btn-book-a-table">Learn More</a>
-                        <a href="https://youtu.be/B-H9wRigQI4"
-                            class="glightbox btn-watch-video d-flex align-items-center"><i
-                                class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 order-1 order-lg-2 text-center text-lg-start ">
-                    <img src="{% static 'assets/img/pln.png' %}" class="img-fluid" alt="" data-aos="zoom-out"
-                        data-aos-delay="300">
-                </div>
-            </div>
+    <section id="gallery" class="gallery section-bg mt-3">
+      <div class="container mt-3" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>gallery</h2>
+          <p>Check <span>ITCC Gallery</span></p>
         </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc1.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc1.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc2.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc2.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc3.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc3.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc4.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc4.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc5.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc5.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/itcc6.jpeg' %}"><img src="{% static 'assets/img/gallery/itcc6.jpeg' %}" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
     </section><!-- End Hero Section -->
 
     <main id="main">
