@@ -22,13 +22,12 @@ class LandingPage(View):
             query = Certification.objects.filter(
                 __(full_name__icontains=q) | __(batch__icontains=q) | __(no_participant__icontains=q) | __(
                     type_certification__icontains=q))
-            query2 = MikroTikCertification.objects.filter(
-                __(full_name__icontains=q))
+            query2 = MikroTikCertification.objects.filter(full_name__icontains=q)
             query3 = LecturerCertification.objects.filter(
                 __(full_name__icontains=q) | __(batch__icontains=q) | __(no_participant__icontains=q) | __(
                     program__icontains=q))
 
-            messages.info(self.request, 'data tidak ditemukan !') if not query else None
+            messages.info(self.request, 'data tidak ditemukan !') if not query and not query2 and not query3 else None
             context['query'] = list(chain(query, query2, query3))
 
         return render(self.request, self.template_name, context)
