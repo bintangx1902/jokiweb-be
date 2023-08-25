@@ -482,7 +482,11 @@
                                         <h5 class="card-title">{{ q.no_participant }}</h5>
                                     </div>
                                     <div class="card-body">
-                                        <p class="card-text">Nama Mahasiswa : {{ q.full_name }}</p>
+                                        <p class="card-text">
+                                            Nama {% if q.is_lecturer %}Dosen : {% else %} Mahasiswa : {% endif %}
+                                            {{ q.full_name }}
+                                        </p>
+
                                         {% if q.type_certification %}
                                         <p class="card-text">Jenis Sertifikasi : {{ q.type_certification }}</p>
                                         {% elif q.program %}

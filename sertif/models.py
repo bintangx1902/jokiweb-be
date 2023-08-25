@@ -28,6 +28,7 @@ class LecturerCertification(models.Model):
     batch = models.CharField(max_length=255)
     no_participant = models.CharField(max_length=255)
     status = models.CharField(max_length=255)
+    is_lecturer = models.BooleanField(default=True)
 
     def __str__(self):
         return f"{self.full_name} - {self.program}"
